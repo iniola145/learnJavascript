@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  gap: 20px;
+}
+.container{
+  padding: 10px 40px;
+  background-color: brown;  
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.display{
+  width: 300px;
+  height: 60px;
+  background-color: white;
+  text-align: right;
+  font-size: 50px;
+  overflow: hidden;
+}
+.button{
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+button{
+  padding: 10px;
+  margin: 5px 20px;
+  width: 60px;
+}
+
+.clock2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 8px solid black;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transform: rotate(calc(var(--rotate) * 1deg)) translateY(-80px) rotate(calc(var(--rotate) * -1deg));
+  font-weight: bold;
+}
+
+.hand {
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  right: 49%;
+  transform-origin: right center;
+  transform: rotate(90deg);
+}
+
+.hour {
+  height: 4px;
+  width: 27%;
+}
+
+.minute {
+  height: 4px;
+  width: 35%;
+}
+
+.second {
+  height: 4px;
+  width: 40%;
+  background-color: red;
+}
