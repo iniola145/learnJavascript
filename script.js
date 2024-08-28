@@ -838,4 +838,4 @@ function updateClock() {
   
   updateClock(); // Initial call to set the correct time immediately
 
-// let myClock = document.querySelector(".clock");
+
